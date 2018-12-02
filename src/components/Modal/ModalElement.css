@@ -1,0 +1,63 @@
+.modal-div {
+    position: relative;
+    height: 60px;
+}
+
+.modal-div label {
+    font-size: 18px;
+    line-height: 32px;
+    position: absolute;
+    right: calc(100% - 170px);    
+}
+
+.modal-div span {
+    position: absolute;
+    top: 35px;
+    left: 190px;
+    font-size: 13px;
+    display: none;
+}
+
+.Field {
+    position: absolute;
+    left: 180px; 
+    height: 30px;
+    width: 300px;
+    font-weight: 300;
+    font-size: 15px;
+    border: 1px solid #DDDDDD;
+    background-color: #FFFFFF;
+    padding: 0px 5px;  
+}
+
+select.Field {
+    width: 313px;
+    height: 33px; 
+}
+
+svg[data-icon="check-circle"], svg[data-icon="times-circle"] {
+    position: absolute;
+    left: 500px;
+    top: 8px;
+    display: none;
+}
+
+svg[data-icon="check-circle"] {
+    color: green;
+}
+
+svg[data-icon="times-circle"], .modal-div span.Obligatory {
+    color: red;
+}
+
+svg[data-icon="check-circle"].OK, svg[data-icon="times-circle"].KO, span.KO {
+    display: block;
+}
+
+.Field.OK, select.OK {
+    border: 1px solid green;
+}
+
+.Field.KO, select.KO {
+    border: 1px solid red;
+}

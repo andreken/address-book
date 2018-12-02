@@ -1,0 +1,73 @@
+.cardGroup {
+	/* center all card elements */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* center container */
+  margin: auto;
+  max-width: 1000px;
+  /* set max height to not exceed window height */
+  max-height: calc(100vh - 15vh - (10px + 1vw + 30px) - (50px + 40px) - 10px);
+  overflow-y: auto;
+}
+
+.card {
+	position: relative;
+	height: 100px;
+	width: 460px;
+	float: left;
+	margin: 5px;
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 
+							0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+							0px 2px 1px -1px rgba(0, 0, 0, 0.12);						
+}
+
+.card div {
+  position: relative;
+  height: 35px;
+}
+
+.card div svg:first-child {
+	position: absolute;
+	top: 5px;
+	width: 40px;
+	padding: 5px;
+}
+
+.card div h3 {
+	position: absolute;
+	top: 6px;
+	left: 50px;
+	margin: 0px;
+}
+
+/* 
+Hide card element and set height to zero 
+Used to maintain last card on the left
+*/
+.card.hidden {
+	visibility: hidden;
+  height: 0px;	
+}
+
+.icon {
+	position: absolute;
+	top: 75px;
+	right: 10px;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0.8;		
+}
+
+.cardGroup svg {
+	color: #555;	
+}
+
+.icon.edit {
+	color: blue;
+}
+
+.icon.delete {
+	right: 42px;
+	color: red;
+}

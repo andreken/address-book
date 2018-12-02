@@ -1,0 +1,15 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #f6fbfe;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+
+.spin {
+	-webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+  position: absolute;
+  left: 50%;
+  top: 50%; 
+}
