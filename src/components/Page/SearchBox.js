@@ -29,6 +29,7 @@ const SearchBox = (props) => {
       	name="search" 
       	className="round" 
       	placeholder="Search..." 
+        aria-label="search"
       	onChange={changeText}
       />
       <FontAwesomeIcon icon={faSearch} size="2x"/>

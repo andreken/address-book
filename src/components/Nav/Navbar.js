@@ -7,18 +7,20 @@ const Navbar = (props) => {
 
   return (
     <nav>
-    	<li
-        className={"tab "+(view === 'VIEW' ? "selected" : "")} 
-        onClick={changeView}
-      >
-      	<a href="javascript:void(0)">Summary</a>
-      </li>
-    	<li
-        className={"tab "+(view === 'EDIT' ? "selected" : "")} 
-        onClick={changeView}
-      >
-      	<a href="javascript:void(0)">Editing</a>
-      </li>
+      <ul>
+      	<li
+          className={"tab "+(view === 'VIEW' ? "selected" : "")} 
+          onClick={changeView}
+        >
+        	<a href="javascript:void(0)">Summary</a>
+        </li>
+      	<li
+          className={"tab "+(view === 'EDIT' ? "selected" : "")} 
+          onClick={changeView}
+        >
+        	<a href="javascript:void(0)">Editing</a>
+        </li>
+      </ul>  
     </nav>
   );
 }
